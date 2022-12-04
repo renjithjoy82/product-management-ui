@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductApiService {
 
-  readonly productAPIURL = "https://localhost:7115/api";
+  readonly productAPIURL = "https://product-management-app-api.azurewebsites.net/api";
 
   constructor(private http:HttpClient) { }
 

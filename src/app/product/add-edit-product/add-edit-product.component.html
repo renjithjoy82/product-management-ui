@@ -11,7 +11,7 @@
     </div>
     <div class="form-group">
         <label for="pprice" class="form-label">Price</label>
-        <input type="text" id="pprice" class="form-control" [(ngModel)]="price" name="pprice" #pprice="ngModel" required [ngModelOptions]="{standalone: true}"> <!-- [(ngModel)]="price" -->
+        <input type="text" id="pprice" class="form-control" [(ngModel)]="price" value="{{price | number:'1.2-2'}}" name="pprice" #pprice="ngModel" required [ngModelOptions]="{standalone: true}"> <!-- [(ngModel)]="price" -->
         <div class="alert alert-danger" *ngIf="(pprice.untouched && !pprice.valid) || pprice.touched && !pprice.valid">
             Price is required!
         </div>

@@ -27,7 +27,7 @@
                     totalItems: count}; let i = index">
                     <td>{{item.id}}</td>
                     <td>{{item.name}}</td>
-                    <td>${{item.price}}</td>
+                    <td>${{item.price | number:'1.2-2'}}</td>
                     <!-- <td>{{item.productTypeId}}</td>  | slice:0:7-->
                     <td>{{productTypesMap.get(item.productTypeId)}}</td>
                     <td>{{item.active}}</td>
